@@ -7,7 +7,7 @@ import java.util.Objects;
 
 public class BasisForWarAndPiece {
     //Read file content into string with - Files.readAllBytes(Path path)
-    public static String filePath = ("D:\\Programming\\FirstStepInJava\\Homework\\src\\HomeWork_5\\Война и мир_книга.txt");
+    public static String filePath = ("Война и мир_книга.txt");
 
     static String readAllBytesJava7(String filePath)
     {
