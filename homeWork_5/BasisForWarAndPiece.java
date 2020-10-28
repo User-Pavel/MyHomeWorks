@@ -21,6 +21,10 @@ public class BasisForWarAndPiece {
         {e.printStackTrace();}
         return content;
     }
+
+    private static char[] illegalChars = {'!','.','?',',','-','"',')','(',';',':'};
+
+
     public static char illegalSymbol1 = '!';
     public static char illegalSymbol2 = '.';
     public static char illegalSymbol3 = '?';
@@ -57,5 +61,26 @@ public class BasisForWarAndPiece {
         }
         return stringBuilder.toString();
     }
+    /**
+     * Исправиление по комментарию
+     * метод, удаляющий все ненужные символы из элементов массива
+     * @param oneElement
+     * @return
+     */
+    public static String toStringFromCharNewVariant(String oneElement){
+        StringBuilder stringBuilder = new StringBuilder();
+        char[] toChar = oneElement.toCharArray();
+        for (int i = 0; i < toChar.length; i++) {
+            for (int j = 0; j < illegalChars.length; j++) {
+                if (Objects.equals(toChar[i], illegalChars[j])) {
+                    continue;
+                } else {
+                    stringBuilder.append(toChar[i]);
+                }
+            }
+        }
+        return stringBuilder.toString();
+    }
+
 
 }

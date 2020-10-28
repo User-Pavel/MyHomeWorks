@@ -14,7 +14,7 @@ public class UnicWords extends BasisForWarAndPiece {
         String delimiter = "\\s";
         oneWord = text.split(delimiter);
         for(int i = 0; i < oneWord.length; i++) {
-            someWords.add(toStringFromChar(oneWord[i]));
+            someWords.add(toStringFromCharNewVariant(oneWord[i]));
         }
         return someWords.toString();
     }
@@ -33,7 +33,7 @@ public class UnicWords extends BasisForWarAndPiece {
         String delimiter = "\\s";
         oneWord = text.split(delimiter);
         for(int i = 0; i < oneWord.length; i++) {
-            someWords.add(toStringFromChar(oneWord[i]));
+            someWords.add(toStringFromCharNewVariant(oneWord[i]));
         }
         for (int i = 0; i < someWords.size(); i++) {
             int count = 0;
